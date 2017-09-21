@@ -101,13 +101,21 @@
       /* padding: 0 !important; */
       width: 200px;
       height: 100%;
-      border-right: 1px solid gray;
+    }
+	
+	#walletlist {
+      list-style-type: none;
+	  
+    }
+	
+	#maincontent{
+		border-left: 1px solid gray;
 	}
 	
 	#numbers{
 		color: #FF6200;
 		float: right;
-		margin-right:200px;
+		margin-right:150px;
 	}
 	
 	#activenum{
@@ -165,16 +173,19 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-2">
+      <div class="col-sm-2" >
           <ul id="sidebar" class="nav nav-stacked">
               <li><a href="#">Dashboard</a></li>
               <li><a href="#">Transactions</a></li>
               <li><a href="#">Beneficiaries</a></li>
 			  <p>Admin</p>
-			  <li class="active-sidebar"><a href="#">Manage Users</a></li>
+			  <li class="active-sidebar">
+				<a href="#">Manage Users</a>
+			    <ul id="walletlist"><li>Salary wallet<li></ul>
+			  </li>
           </ul>
 	  </div>
-      <div class="col-sm-10">
+      <div class="col-sm-10" id="maincontent">
 		<h4><span id="plus">+</span> Add Users</h4>
 		<div class="users">
 			<ul>
